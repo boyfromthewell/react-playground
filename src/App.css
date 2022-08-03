@@ -4,10 +4,16 @@
 
 .main-container {
   display: flex;
-  flex-basis: 50%;
+
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+.user-profile-container {
+  display: flex;
+  width: 90%;
+  height: 50%;
 }
 
 .App-logo {

@@ -5,22 +5,25 @@ import "./styles/Profile.scss";
 
 function Profile() {
   const user = useSelector((state) => state.user.value);
+  const color = useSelector((state) => state.theme.value);
 
   const dispatch = useDispatch();
 
   const logOutCtrl = () => {
     dispatch(LOG_OUT());
   };
-  console.log(user);
+
   return (
-    <div className="profile-container">
+    <div className="profile-container" style={{ color: `${color}` }}>
       <div style={{ marginLeft: 30 }}>
         <h1>Profile Page</h1>
-        <p>name : {user.name}</p>
-        <p>age : {user.age}</p>
-        <p>email : {user.email}</p>
+        <p>Name : {user.name}</p>
+        <p>Age : {user.age}</p>
+        <p>Email : {user.email}</p>
       </div>
-      <button onClick={logOutCtrl}>로그아웃</button>
+      <div className="logout-btn">
+        <button onClick={logOutCtrl}>로그아웃</button>
+      </div>
     </div>
   );
 }

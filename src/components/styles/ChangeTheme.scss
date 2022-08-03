@@ -1,0 +1,28 @@
+.change-theme-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    border: 1px solid lightgray;
+    margin-top: 10px;
+    height: 20%;
+
+    p {
+        margin-left: 40px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+
+.color-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.paint {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    border-radius: 50%;
+}

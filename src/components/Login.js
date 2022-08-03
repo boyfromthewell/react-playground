@@ -12,7 +12,6 @@ function Login() {
   const age = useInput();
   const email = useInput();
 
-  console.log(name);
   const toggleInput = () => {
     setToggleLoginInput((prev) => !prev);
   };
@@ -23,10 +22,13 @@ function Login() {
   };
   return (
     <div className="login-container">
-      <button onClick={toggleInput}>Login</button>
+      <button className="login-btn" onClick={toggleInput}>
+        Login
+      </button>
       {toggleLoginInput ? (
         <form
           onSubmit={submitCtrl}
+          className="login-form"
           style={{ display: "flex", flexDirection: "column" }}
         >
           <label>Name</label>
@@ -35,7 +37,9 @@ function Login() {
           <input {...age} />
           <label>Email</label>
           <input type="email" {...email} />
-          <button type="submit">ㄹㅇ 로그인</button>
+          <button className="submit-btn" type="submit">
+            Submit
+          </button>
         </form>
       ) : null}
     </div>

@@ -1,9 +1,26 @@
 .profile-container {
-    width: 40%;
-    height: 50%;
+
     display: flex;
+    width: 50%;
     flex-direction: column;
     justify-content: center;
     border: 1px solid lightgray;
-    margin-right: 3px;
+    margin-right: 10px;
+}
+
+.logout-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button {
+        background-color: lightslategrey;
+        width: 50%;
+        border: none;
+        height: 4vh;
+        border-radius: 10px;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+    }
 }
