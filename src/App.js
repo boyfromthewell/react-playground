@@ -1,18 +1,15 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Profile from "./components/Profile";
-import Login from "./components/Login";
-import ChangeTheme from "./components/ChangeTheme";
+
+import { Route, Routes } from "react-router-dom";
+import Slider from "./components/carousel/Slider";
+import Home from "./components/Home";
 function App() {
   return (
-    <div className="main-container">
-      <div className="user-profile-container">
-        <Profile />
-        <Login />
-      </div>
-
-      <ChangeTheme />
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/carousel" element={<Slider />} />
+    </Routes>
   );
 }
 
