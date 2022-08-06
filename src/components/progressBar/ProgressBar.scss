@@ -1,0 +1,15 @@
+.scroll-progress {
+    width: 100%;
+    height: 7px;
+    background-color: gray;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+
+    &-bar {
+        height: 100%;
+        background-color: lightblue;
+    }
+}

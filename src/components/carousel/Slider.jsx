@@ -92,6 +92,7 @@ const Button = styled.div`
   color: black;
   border-radius: 10px;
   border: 2px solid lightblue;
+  cursor: pointer;
   &:hover {
     background-color: lightblue;
     color: #fff;
